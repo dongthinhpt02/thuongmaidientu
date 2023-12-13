@@ -1,0 +1,192 @@
+:root { -
+	-editor-top-bar-background: #060606; -
+	-tab-bg: #1d1e22; -
+	-tab-border-color: #34363e; -
+	-resizer-background: var(- -editor-top-bar-background); -
+	-resizer-border: #2f2f2f;
+}
+
+:root {
+	color-scheme: dark; -
+	-cp-bg: var(- -cp-color-20); -
+	-cp-color: var(- -cp-color-1); -
+	-cp-color-shadow: hsl(var(- -cp-color-18-hsl)/60%); -
+	-cp-button-bg: var(- -cp-color-13); -
+	-cp-button-color: white; -
+	-cp-button-hover-bg: var(- -cp-color-12); -
+	-cp-button-hover-color: var(- -cp-button-color); -
+	-cp-button-hover-icon: var(- -cp-button-icon); -
+	-cp-button-active: var(- -cp-color-13); -
+	-cp-grid-item-bg: var(- -cp-color-16); -
+	-cp-grid-item-color: var(- -cp-color-1); -
+	-cp-grid-item-screenshot-bg: var(- -cp-color-13); -
+	-cp-grid-item-screenshot-color: var(- -cp-color-11); -
+	-cp-grid-item-author-color: var(- -cp-color-7); -
+	-cp-tag-bg: var(- -cp-color-13); -
+	-cp-tag-color: var(- -cp-color-blue-light); -
+	-cp-tag-fill: var(- -cp-color-7); -
+	-cp-tag-hover-bg: var(- -cp-color-11); -
+	-cp-tag-hover-color: var(- -cp-color-1); -
+	-cp-input-bg: var(- -cp-color-4); -
+	-cp-input-color: var(- -cp-color-17); -
+	-cp-input-placeholder: var(- -cp-color-10); -
+	-cp-input-focus-border: var(- -cp-color-11); -
+	-cp-input-focus-bg: var(- -cp-color-1); -
+	-cp-select-bg: var(- -cp-color-4); -
+	-cp-select-color: var(- -cp-color-18); -
+	-cp-select-hover-bg: var(- -cp-color-1); -
+	-cp-select-hover-color: var(- -cp-color-16); -
+	-cp-select-focus-border: var(- -cp-color-18); -
+	-cp-control-bar-bg: var(- -cp-color-16); -
+	-cp-control-bar-color: var(- -cp-color-10); -
+	-cp-control-bar-input-bg: var(- -cp-color-14); -
+	-cp-control-bar-input-color: var(- -cp-color-3); -
+	-cp-control-bar-input-placeholder: var(- -cp-color-8); -
+	-cp-control-bar-input-focus-bg: var(- -cp-color-13); -
+	-cp-control-bar-input-focus-color: var(- -cp-color-1); -
+	-cp-control-bar-input-focus-border-color: var(- -cp-color-12); -
+	-cp-control-bar-button-bg: var(- -cp-color-13); -
+	-cp-control-bar-button-hover-bg: var(- -cp-color-11); -
+	-cp-control-bar-button-color: var(- -cp-color-1); -
+	-cp-asset-list-item-color: var(- -cp-color-4); -
+	-cp-asset-list-item-hover-color: var(- -cp-color-1); -
+	-cp-asset-list-item-hover-bg: var(- -cp-color-14); -
+	-cp-editor-actions-bg: var(- -cp-color-16); -
+	-cp-pen-border: var(- -cp-color-15); -
+	-cp-pen-border-hover: var(- -cp-color-13); -
+	-cp-pen-header-bg: var(- -cp-color-20); -
+	-cp-pen-header-color: var(- -cp-color-1); -
+	-cp-pen-header-color-secondary: var(- -cp-color-8);
+	Show
+	All
+	Properties
+	(104
+	more)
+}
+
+:root { -
+	-cp-color-1-hsl: 0deg 0% 100%; -
+	-cp-color-1: hsl(var(- -cp-color-1-hsl)); -
+	-cp-color-2-hsl: 240deg 7.69% 94.9%; -
+	-cp-color-2: hsl(var(- -cp-color-2-hsl)); -
+	-cp-color-3-hsl: 225deg 10.53% 92.55%; -
+	-cp-color-3: hsl(var(- -cp-color-3-hsl)); -
+	-cp-color-4-hsl: 228deg 9.8% 90%; -
+	-cp-color-4: hsl(var(- -cp-color-4-hsl)); -
+	-cp-color-5-hsl: 226.67deg 12% 85.29%; -
+	-cp-color-5: hsl(var(- -cp-color-5-hsl)); -
+	-cp-color-6-hsl: 230deg 12% 80.39%; -
+	-cp-color-6: hsl(var(- -cp-color-6-hsl)); -
+	-cp-color-7-hsl: 225.88deg 13.39% 75.1%; -
+	-cp-color-7: hsl(var(- -cp-color-7-hsl)); -
+	-cp-color-8-hsl: 226.67deg 11.84% 70.2%; -
+	-cp-color-8: hsl(var(- -cp-color-8-hsl)); -
+	-cp-color-9-hsl: 233.33deg 9.89% 64.31%; -
+	-cp-color-9: hsl(var(- -cp-color-9-hsl)); -
+	-cp-color-10-hsl: 226.15deg 12.04% 57.65%; -
+	-cp-color-10: hsl(var(- -cp-color-10-hsl)); -
+	-cp-color-11-hsl: 228.39deg 12.25% 50.39%; -
+	-cp-color-11: hsl(var(- -cp-color-11-hsl)); -
+	-cp-color-12-hsl: 228deg 12.2% 40.2%; -
+	-cp-color-12: hsl(var(- -cp-color-12-hsl)); -
+	-cp-color-13-hsl: 227.37deg 12.26% 30.39%; -
+	-cp-color-13: hsl(var(- -cp-color-13-hsl)); -
+	-cp-color-14-hsl: 222.86deg 13.73% 20%; -
+	-cp-color-14: hsl(var(- -cp-color-14-hsl)); -
+	-cp-color-15-hsl: 223.64deg 12.94% 16.67%; -
+	-cp-color-15: hsl(var(- -cp-color-15-hsl)); -
+	-cp-color-16-hsl: 232.5deg 11.76% 13.33%; -
+	-cp-color-16: hsl(var(- -cp-color-16-hsl)); -
+	-cp-color-17-hsl: 225deg 9.52% 8.24%; -
+	-cp-color-17: hsl(var(- -cp-color-17-hsl)); -
+	-cp-color-18-hsl: 240deg 9.09% 4.31%; -
+	-cp-color-18: hsl(var(- -cp-color-18-hsl)); -
+	-cp-color-19-hsl: 0deg 0% 0.39%; -
+	-cp-color-19: hsl(var(- -cp-color-19-hsl)); -
+	-cp-color-20-hsl: 0deg 0% 0%; -
+	-cp-color-20: hsl(var(- -cp-color-20-hsl)); -
+	-cp-color-green-hsl: 139.41deg 58.62% 54.51%; -
+	-cp-color-green: hsl(var(- -cp-color-green-hsl)); -
+	-cp-color-green-light-hsl: 139.09deg 100% 91.37%; -
+	-cp-color-green-light: hsl(var(- -cp-color-green-light-hsl)); -
+	-cp-color-green-dark-hsl: 139.62deg 59.09% 34.51%; -
+	-cp-color-green-dark: hsl(var(- -cp-color-green-dark-hsl)); -
+	-cp-color-yellow-hsl: 49.32deg 100% 62.55%; -
+	-cp-color-yellow: hsl(var(- -cp-color-yellow-hsl)); -
+	-cp-color-yellow-light-hsl: 48.97deg 87.88% 80.59%; -
+	-cp-color-yellow-light: hsl(var(- -cp-color-yellow-light-hsl));
+	Show
+	All
+	Properties
+	(38
+	more)
+}
+
+:root {
+	background: var(- -cp-bg);
+	color: var(- -cp-color); -
+	-cp-button-default-bg: var(- -cp-button-bg); -
+	-cp-button-default-color: var(- -cp-button-color); -
+	-cp-sidebar-width: 180px; -
+	-cp-header-height: 65px; -
+	-cp-header-height-small: 53px; -
+	-cp-control-bar-height: 29px; -
+	-cp-control-bar-space-between: 1.5rem; -
+	-cp-font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma,
+		Sans-Serif; -
+	-cp-font-family-header: 'Telefon Black', Sans-Serif; -
+	-cp-font-family-header-alt: 'Telefon', Sans-Serif; -
+	-cp-font-family-monospace: SFMono-Regular, Consolas, 'Liberation Mono',
+		Menlo, monospace; -
+	-cp-font-family-editor: var(- -cp-font-family-monospace); -
+	-cp-button-icon: currentColor; -
+	-cp-button-border-width: 3px; -
+	-cp-button-border-radius: 4px; -
+	-cp-button-margin-block: 1px; -
+	-cp-button-margin-inline: 10px; -
+	-cp-button-padding-inline: 16px; -
+	-cp-button-padding-block: 10px; -
+	-cp-pen-radius: 5px; -
+	-cp-pen-logo-size: 30px; -
+	-cp-pen-header-spacing: calc(var(- -cp-pen-sidebar-spacing)* 1.5); -
+	-cp-pen-sidebar-width: 60px; -
+	-cp-pen-sidebar-icon-size: 26px; -
+	-cp-pen-sidebar-spacing: 6px; -
+	-cp-pen-sidebar-minimal-width: 6px; -
+	-cp-pen-panel-spacing: 0.7rem; -
+	-cp-pen-bar-height: 45px;
+}
+
+html, body {
+	overflow: hidden;
+}
+
+html {
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+
+html {
+	font-family: var(- -cp-font-family);
+	line-height: 1.5;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+user agent stylesheet
+:root {
+	view-transition-name: root;
+}
+
+user agent stylesheet
+html {
+	display: block;
+}

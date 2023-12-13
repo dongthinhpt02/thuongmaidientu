@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java/controller/LoginController.java=UTF-8
+encoding//src/main/java/dao/AccountDaoImpl.java=UTF-8
+encoding//src/main/java/dao/CategoryDaoImpl.java=UTF-8
+encoding//src/main/java/dao/SuppilerDaoImpl.java=UTF-8
+encoding//src/main/webapp/views/admin/layout/footer.jsp=UTF-8
+encoding//src/main/webapp/views/admin/layout/left.jsp=UTF-8
+encoding//src/main/webapp/views/bill/bill.jsp=UTF-8
+encoding//src/main/webapp/views/cart/listcart.jsp=UTF-8
+encoding//src/main/webapp/views/layout/footer.jsp=UTF-8
