@@ -1,4 +1,4 @@
-package controller;
+package controller.admin;
 
 import java.io.IOException;
 import java.util.List;
@@ -13,19 +13,18 @@ import javax.servlet.http.HttpServletResponse;
 
 import concern.GetCookie;
 import entity.Account;
-import entity.Product;
-import entity.Supplier;
+import entity.Bill;
 import service.AccountServiceImpl;
+import service.BillServiceImpl;
 import service.IAccountService;
-import service.IProductService;
-import service.ProductServiceImpl;
+import service.IBillService;
 
 @MultipartConfig
-@WebServlet(urlPatterns = {"/products/detail"})
-public class ProductDetailController extends HttpServlet{
+@WebServlet(urlPatterns = {"/admin/bills"})
+public class BillAdminController extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
-	IProductService productService = new ProductServiceImpl();
+	IBillService billService = new BillServiceImpl();
 	IAccountService accountService = new AccountServiceImpl();
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -33,22 +32,19 @@ public class ProductDetailController extends HttpServlet{
 	    resp.setCharacterEncoding("UTF-8");
 	    Cookie cookie = GetCookie.getCookieByName(req, "username");
 		Account account = accountService.getByUsername((cookie != null) ? cookie.getValue() : null);
-		req.setAttribute("account", account);
-		getProductDetail(req, resp);
-		req.getRequestDispatcher("/views/product/productdetail.jsp").forward(req, resp);
+		getAllBill(req, resp);
+		req.getRequestDispatcher("/views/admin/bill/bill.jsp").forward(req, resp);
 	}
 	
-	protected void getProductDetail (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-		int id = Integer.parseInt(req.getParameter("id"));
+	protected void getAllBill(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		
+		
 		try {
 
-			Product product = productService.findById(id);
-
-			// thông báo
-			
-			req.setAttribute("unitPrice", (int) product.getUnitPrice());
-
-			req.setAttribute("product", product);
+			List<Bill> list = billService.getAllBill();
+		
+			req.setAttribute("bills", list);
 
 		} catch (Exception e) {
 

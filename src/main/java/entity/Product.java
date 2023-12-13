@@ -36,7 +36,7 @@ public class Product implements Serializable {
 	@Column(columnDefinition = "text")
 	private String description;
 	
-	@Column(columnDefinition = "nvarchar(100)")
+	@Column(columnDefinition = "nvarchar(1000)")
 	private String image;
 	
 	@Column(columnDefinition = "integer")

@@ -127,7 +127,7 @@
 								<option value="${category.id}">${category.name}</option>
 							</c:forEach>
 						</select><br> <br>
-						<button type="submit" value="Submit">Thêm</button>
+						<button type="submit" value="Submit">Chỉnh sửa</button>
 					</form>
 				</div>
 			</main>

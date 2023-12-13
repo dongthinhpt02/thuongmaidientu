@@ -36,7 +36,7 @@
 								<tbody>
 									<c:forEach var="item" items="${cartArray}">
 										<tr class="cart_item">
-											<td class="cart_item_name">${item.getKey().image}</td>
+											<td class="cart_item_name"><img src="${item.getKey().image}" alt="Example Image" width="150" height="100"></td>
 											<td class="cart_item_name">${item.getKey().name}</td>
 											<td class="cart_item_quantity">${item.getValue()}</td>
 

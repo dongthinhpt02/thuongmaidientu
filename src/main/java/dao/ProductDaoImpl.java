@@ -257,4 +257,25 @@ public class ProductDaoImpl implements IProductDao{
 
         return revenueByProducts;
     }
+
+	@Override
+	public String getProductNameById(int id) {
+		EntityManager entityManager = JPAConfig.getEntityManager();
+
+        String jpql = "SELECT p.name FROM Product p WHERE p.id = :productId";
+
+        String productName = null;
+
+        try {
+            TypedQuery<String> query = entityManager.createQuery(jpql, String.class);
+            query.setParameter("id", id);
+            productName = query.getSingleResult();
+        } catch (NoResultException | NonUniqueResultException e) {
+            // Handle exceptions or return null if no product with that ID is found
+        } finally {
+            entityManager.close();
+        }
+
+        return productName;
+    }
 }

@@ -6,6 +6,13 @@
 		<i class="fas fa-tachometer-alt"></i>
 	</div> Thống kê doanh thu
 </a>
+
+<div class="sb-sidenav-menu-heading">Quản lý hóa đơn</div>
+<a class="nav-link" href="/Nhom11/admin/bills">
+	<div class="sb-nav-link-icon">
+		<i class="fas fa-tachometer-alt"></i>
+	</div> Xem hóa đơn
+</a>
 <div class="sb-sidenav-menu-heading">Quản lý danh mục</div>
 
 <div>

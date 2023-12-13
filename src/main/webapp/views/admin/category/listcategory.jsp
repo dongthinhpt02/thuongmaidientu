@@ -82,7 +82,7 @@
 					</ol>
 					<div class="card mb-4">
 						<div class="card-header">
-							<i class="fas fa-table me-1"></i> Danh sách nhà cung cấp
+							<i class="fas fa-table me-1"></i> Danh sách danh mục	
 						</div>
 						<div class="card-body">
 							<table id="datatablesSimple">
@@ -113,7 +113,8 @@
 										<tr>
 											<td>${i.id}</td>
 											<td>${i.name}</td>
-											<td>${i.image}</td>
+											<td><img src="${i.image}" alt="Example Image" width="150" height="100">
+											</td>
 											<td>${i.status}</td>
 											<td><a href="/Nhom11/admin/categories/update?id=${ i.id.toString() }">Chỉnh sửa</a></td>
 											<td><c:choose>

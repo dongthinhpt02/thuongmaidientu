@@ -41,7 +41,7 @@
 				<c:when test="${ account != null }">
 					<p class="badge bg-dark text-white ms-1 rounded-pill">Xin chào
 						${ account.username }</p>
-					<form action="logout" method="post">
+					<form action="/Nhom11/logout" method="post">
 						<button class="badge bg-dark text-white ms-1 rounded-pill"
 							type="submit">Đăng xuất</button>
 					</form>
@@ -59,9 +59,12 @@
 				id="sidenavAccordion">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-
+						
 						<%@ include file="/views/admin/layout/left.jsp"%>
-
+						
+						
+						
+						
 					</div>
 				</div>
 				<div class="sb-sidenav-footer">
@@ -72,24 +75,52 @@
 		</div>
 		<div id="layoutSidenav_content">
 			<main>
-				<div class="container-fluid px-4"></div>
-				<h1 class="mt-4">Quản lý thương mại điện tử</h1>
-				<ol class="breadcrumb mb-4">
-					<li class="breadcrumb-item active">Quản lý</li>
-				</ol>
-				<div class="insert-form">
-					<h1 >Chỉnh sửa nhà cung cấp</h1>
-					<form  method="post">
-						<label for="id">Id:</label> <input value="${supplier.id}" type="text" id="name"
-							name="id" disabled><br>
-						<br> <label for="name">Name:</label> <input value="${supplier.name}" type="text" id="name"
-							name="name"><br>
-						<br> <label for="image">Image:</label> <input value="${supplier.image}" type="text"
-							id="image" name="image"><br>
-						<br> 
-						<br> <button type="submit" > Chỉnh sửa </button>
-					</form>
-				</div>
+				<div class="container-fluid px-4">
+					<h1 class="mt-4">Quản lý thương mại điện tử</h1>
+					<ol class="breadcrumb mb-4">
+						<li class="breadcrumb-item active">Quản lý</li>
+					</ol>
+					<div class="card mb-4">
+						<div class="card-header">
+							<i class="fas fa-table me-1"></i> Danh sách hóa đơn
+						</div>
+						<div class="card-body">
+							<table id="datatablesSimple">
+								<thead>
+									<tr>
+										<th>Id</th>
+										<th>Số điện thoại</th>
+										<th>Địa chỉ</th>
+										<th>Chi tiết hóa đơn</th>
+										
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<th>Id</th>
+										<th>Số điện thoại</th>
+										<th>Địa chỉ</th>
+										<th>Chi tiết hóa đơn</th>
+									</tr>
+								</tfoot>
+
+								<tbody>
+								<c:forEach items="${bills}" var="i">
+									<!-- foreach ($order->lineItems as $line) or some such thing here -->
+									<tr>
+										<td>${i.id}</td>
+										<td class="text-center">${i.phoneNumber}</td>
+										<td class="text-right">${i.shippingAddress}</td>
+										<td><div style="text-align: right;">
+												<a href="/Nhom11/admin/bills/detail?billId=${i.id.toString() }">Chi tiết hóa đơn</a>
+											</div></td>
+										</tr>
+								</c:forEach>			
+							</tbody>
+
+							</table>
+						</div>
+					</div>
 			</main>
 			<%@ include file="/views/admin/layout/footer.jsp"%>
 		</div>

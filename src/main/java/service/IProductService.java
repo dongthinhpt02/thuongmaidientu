@@ -17,4 +17,5 @@ public interface IProductService {
 	public List<Product> findProductByCategoryId(int categoryId);
 	public List<Product> findProductByCategoryAndSupplierId(int categoryId, int supplierId);
 	public List<Object[]> getRevenueByAllProducts();
+	public String getProductNameById(int id);
 }

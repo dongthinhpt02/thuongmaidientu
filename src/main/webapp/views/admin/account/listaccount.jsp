@@ -108,7 +108,7 @@
 										<tr>
 											<td>${i.email}</td>
 											<td>${i.fullName}</td>
-											<td>${i.image}</td>
+											<td><img src="${i.image}" alt="Example Image" width="150" height="100">
 											<td>${i.phoneNumber}</td>
 											<td>${i.status}</td>
 											<td><c:choose>

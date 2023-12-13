@@ -56,5 +56,9 @@ public class ProductServiceImpl implements IProductService {
 	public List<Object[]> getRevenueByAllProducts() {
 		return productDao.getRevenueByAllProducts();
 	}
+	@Override
+	public String getProductNameById(int id) {
+		return productDao.getProductNameById(id);
+	}
 
 }

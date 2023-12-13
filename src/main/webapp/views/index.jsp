@@ -46,17 +46,15 @@
 						<p class="badge bg-dark text-white ms-1 rounded-pill">Xin chào
 							${ account.username }</p>
 						<a class="btn btn-outline-dark text-decoration-none"
-							href="/Nhom11/updateuser">Thay đổi thông tin
-						</a>
-						<form method="post">
-							<button class="badge bg-dark text-white ms-1 rounded-pill"
-								type="submit">Quản lý đơn hàng</button>
-						</form>
+							href="/Nhom11/updateuser">Thay đổi thông tin </a>
+						
+							<a class="btn btn-outline-dark text-decoration-none"
+								href="/Nhom11/bills">Quản lý hóa đơn 
+							</a>
 						<form action="logout" method="post">
 							<button class="btn btn-outline-dark" type="submit">Đăng
 								xuất</button>
 						</form>
-
 					</c:when>
 					<c:otherwise>
 						<button class="btn btn-outline-dark">
@@ -87,7 +85,7 @@
 						<c:forEach var="e" items="${categories}">
 							<option value=${ e.id }>${e.name}</option>
 						</c:forEach>
-					</select> <label>Nhà cung cap:</label> <select name="supplierId">
+					</select> <label>Nhà cung cấp:</label> <select name="supplierId">
 						<option value="">Tất cả</option>
 						<c:forEach var="e" items="${suppliers}">
 							<option value=${ e.id }>${e.name}</option>
@@ -102,8 +100,8 @@
 					<div class="col mb-5">
 						<div class="card h-100">
 							<!-- Product image-->
-							<img class="card-img-top"
-								src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+							<td><img src="${i.image}" alt="Example Image" width="260"
+								height="260"></td>
 							<!-- Product details-->
 							<div class="card-body p-4">
 								<div class="text-center">

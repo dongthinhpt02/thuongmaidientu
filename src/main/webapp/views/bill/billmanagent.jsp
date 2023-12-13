@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ include file="/common/taglib.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +14,10 @@
 <!------ Include the above in your HEAD tag ---------->
 </head>
 <div class="container">
-	<a class="navbar-brand" href="/Nhom11/home">Cửa hàng thương mại
-		điện tử</a>
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="invoice-title">
-				<h2>Danh sách hóa đơn của ${account.fullName}</h2>
+				<h2>Invoice</h2>
 			</div>
 			<hr>
 		</div>
@@ -46,18 +43,14 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${bills}" var="i">
-									<!-- foreach ($order->lineItems as $line) or some such thing here -->
-									<tr>
-										<td>${i.id}</td>
-										<td class="text-center">${i.phoneNumber}</td>
-										<td class="text-right">${i.shippingAddress}</td>
-										<td><div style="text-align: right;">
-												<a href="/Nhom11/bills/detail?billId=${i.id.toString() }">Chi
-													tiết hóa đơn</a>
-											</div></td>
-									</tr>
-								</c:forEach>
+								<!-- foreach ($order->lineItems as $line) or some such thing here -->
+								<tr>
+									<td>BS-200</td>
+									<td class="text-center">1</td>
+									<td class="text-right">$10.99</td>
+									<td><div style="text-align: right;">
+											<button>Chi tiết hóa đơn</button>
+										</div></td>
 							</tbody>
 						</table>
 					</div>

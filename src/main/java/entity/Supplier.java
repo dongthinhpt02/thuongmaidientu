@@ -29,7 +29,7 @@ public class Supplier implements Serializable {
 	@Column(columnDefinition = "nvarchar(20)")
 	private String name;
 	
-	@Column(columnDefinition = "nvarchar(100)")
+	@Column(columnDefinition = "nvarchar(1000)")
 	private String image;
 	
 	@Column(columnDefinition = "integer")

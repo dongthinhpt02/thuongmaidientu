@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ include file="/common/taglib.jsp"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +16,8 @@
 <!------ Include the above in your HEAD tag ---------->
 </head>
 <div class="container">
+	<a class="navbar-brand" href="/Nhom11/home">Cửa hàng thương mại
+		điện tử</a>
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="invoice-title">
@@ -43,27 +47,30 @@
 								</tr>
 							</thead>
 							<tbody>
-								<!-- foreach ($order->lineItems as $line) or some such thing here -->
-								<tr>
-									<td>BS-200</td>
-									<td class="text-center">$10.99</td>
-									<td class="text-center">1</td>
-									<td class="text-right">$10.99</td>
+								<c:forEach items="${list}" var="i">
+									<tr>
+										<td>${i.id}</td>
+										<td class="text-center">${i.product.name}</td>
+										<td><fmt:formatNumber value="${i.unitPriceBought}"
+												type="number" pattern="###" /> VNĐ</td>
+										<td class="text-right">${i.quantity}</td>
+									</tr>
+								</c:forEach>
 							</tbody>
 						</table>
 					</div>
 				</div>
 				<br> <br>
 
-				
+
 			</div>
 			<div style="text-align: right;">
-					<tr>
-						<td class="left"><strong class="text-dark">Total</strong></td>
-						<td class="right"><strong class="text-dark">$20,744,00</strong>
-						</td>
-					</tr>
-				</div>
+				<tr>
+					<td class="left"><strong class="text-dark">Total</strong></td>
+					<td class="right"><strong class="text-dark">${totalCost} VNĐ</strong>
+					</td>
+				</tr>
+			</div>
 		</div>
 	</div>
 </div>

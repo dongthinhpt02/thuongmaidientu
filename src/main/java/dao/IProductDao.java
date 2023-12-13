@@ -18,4 +18,5 @@ public interface IProductDao {
 	public Product getProductDetail(int id);
 	public List<Product> findProductByCategoryAndSupplierId(int categoryId, int supplierId);
 	public List<Object[]> getRevenueByAllProducts();
+	public String getProductNameById(int id);
 }
