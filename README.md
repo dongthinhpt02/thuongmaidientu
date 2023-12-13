@@ -1,3 +1,3 @@
 "# thuongmaidientu" 
-Tạo database tên nhom_11
+Tạo database tên Nhom11
 
